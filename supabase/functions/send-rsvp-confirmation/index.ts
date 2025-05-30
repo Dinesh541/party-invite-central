@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // For testing, use your verified email as sender
     const emailResponse = await resend.emails.send({
-      from: "Birthday Party <dinesh.vy1203@gmail.com>",
+      from: "Birthday Party <onboarding@resend.dev>",
       to: [email],
       subject: "🎉 RSVP Confirmation - Birthday Party!",
       html: `
