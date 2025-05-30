@@ -53,8 +53,8 @@ const handler = async (req: Request): Promise<Response> => {
           <div style="text-align: center; margin: 30px 0;">
             <h3 style="color: #8B5CF6;">Party Details</h3>
             <p>📅 <strong>Date:</strong> Saturday, June 15th, 2024</p>
-            <p>⏰ <strong>Time:</strong> 7:00 PM onwards</p>
-            <p>📍 <strong>Venue:</strong> My Place - 123 Party Street</p>
+            <p>⏰ <strong>Time:</strong> 11:00 AM onwards</p>
+            <p>📍 <strong>Venue:</strong> Gilbert Community Center(OAK Room) - 130 N Oak St, Gilbert, AZ 85233</p>
             <p>🎈 <strong>Theme:</strong> Celebration & Fun!</p>
           </div>
           
