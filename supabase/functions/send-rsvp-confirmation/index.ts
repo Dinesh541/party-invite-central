@@ -29,8 +29,9 @@ const handler = async (req: Request): Promise<Response> => {
     const attendanceText = attendance === 'yes' ? 'will be attending' : 'will not be attending';
     const guestText = guests ? ` with ${guests}` : '';
 
+    // For testing, use your verified email as sender
     const emailResponse = await resend.emails.send({
-      from: "Birthday Party <onboarding@resend.dev>",
+      from: "Birthday Party <dinesh.vy1203@gmail.com>",
       to: [email],
       subject: "🎉 RSVP Confirmation - Birthday Party!",
       html: `
