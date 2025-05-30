@@ -189,7 +189,7 @@ const RSVPForm = ({ onRSVPSubmitted }: { onRSVPSubmitted: () => void }) => {
 
         <div>
           <Label htmlFor="guests" className="text-sm font-medium text-gray-700">
-            Number of Guests
+            Number of Guests other than you
           </Label>
           <Input
             id="guests"
