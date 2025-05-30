@@ -42,7 +42,7 @@ const PartyProfile = () => {
         </div>
         <h1 className="text-5xl font-extrabold text-cyan-100 mb-2 drop-shadow-lg">Daksh Turns One!</h1>
         <h2 className="text-2xl font-medium text-blue-100 mb-4">Come celebrate a year of joy and milestones</h2>
-        <p className="text-md text-blue-50"We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories.</p>
+        <p className="text-md text-blue-50">We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories.</p>
         <div className="mt-4 text-2xl font-bold text-blue-900 bg-white rounded-full px-8 py-3 inline-block shadow-md animate-pulse">
           ⏳ {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s to go!
         </div>
