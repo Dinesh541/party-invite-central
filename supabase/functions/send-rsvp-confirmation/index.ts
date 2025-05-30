@@ -33,10 +33,10 @@ const handler = async (req: Request): Promise<Response> => {
     const emailResponse = await resend.emails.send({
       from: "Daksh Kalli <daksh@dakshkalli.com>",
       to: [email],
-      subject: "🎉 RSVP Confirmation - Birthday Party!",
+      subject: "🎉 RSVP Confirmation - Daksh Birthday Party!",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-          <h1 style="color: #8B5CF6; text-align: center;">🎉 Birthday Party RSVP Confirmation</h1>
+          <h1 style="color: #8B5CF6; text-align: center;">🎉 Daksh Birthday Party RSVP Confirmation</h1>
           
           <div style="background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); padding: 30px; border-radius: 15px; color: white; text-align: center; margin: 20px 0;">
             <h2 style="margin: 0; font-size: 24px;">Thank You, ${name}!</h2>
@@ -52,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
           
           <div style="text-align: center; margin: 30px 0;">
             <h3 style="color: #8B5CF6;">Party Details</h3>
-            <p>📅 <strong>Date:</strong> Saturday, June 14th, 2024</p>
+            <p>📅 <strong>Date:</strong> Saturday, June 14th, 2025</p>
             <p>⏰ <strong>Time:</strong> 11:00 AM onwards</p>
             <p>📍 <strong>Venue:</strong> Gilbert Community Center(OAK Room) - 130 N Oak St, Gilbert, AZ 85233</p>
             <p>🎈 <strong>Theme:</strong> Celebration & Fun!</p>
