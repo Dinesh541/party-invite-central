@@ -29,9 +29,9 @@ const handler = async (req: Request): Promise<Response> => {
     const attendanceText = attendance === 'yes' ? 'will be attending' : 'will not be attending';
     const guestText = guests ? ` with ${guests}` : '';
 
-    // For testing, use your verified email as sender
+    // Using your verified domain email
     const emailResponse = await resend.emails.send({
-      from: "Daksh Kalli <Daksh@dakshkalli.com>",
+      from: "Daksh Kalli <daksh@dakshkalli.com>",
       to: [email],
       subject: "🎉 RSVP Confirmation - Birthday Party!",
       html: `
@@ -68,7 +68,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p style="text-align: center; margin-top: 30px; color: #6B7280;">
             Can't wait to see you at the party! 🎈<br>
             With love,<br>
-            <strong>Your Host</strong>
+            <strong>Daksh</strong>
           </p>
         </div>
       `,
