@@ -122,7 +122,7 @@ const AttendeeList = ({ refreshTrigger }: { refreshTrigger: number }) => {
                   </div>
                   
                   <div className="text-sm text-gray-600 space-y-1">
-                    <p>{rsvp.email}</p>
+                    
                     {rsvp.guests && rsvp.attendance === 'yes' && (
                       <p className="text-blue-600">👥 Bringing: {rsvp.guests}</p>
                     )}
