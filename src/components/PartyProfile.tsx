@@ -34,7 +34,7 @@ const PartyProfile = () => {
   }, [hasCelebrated]);
 
   useEffect(() => {
-    const message = `Hi! We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories. Come celebrate my birthday on June 14th at 11 AM at the Gilbert Community Center!`;
+    const message = `We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh Kalli. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories. Come celebrate my son's birthday on June 14th at 11 AM at the Gilbert Community Center!`;
     const synth = window.speechSynthesis;
     const utterance = new SpeechSynthesisUtterance(message);
     utterance.rate = 0.95;
