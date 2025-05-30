@@ -34,60 +34,60 @@ const PartyProfile = () => {
   }, [hasCelebrated]);
 
   return (
-    <div className="bg-gradient-to-br from-rose-300 via-pink-200 to-amber-200 text-gray-900 p-10 rounded-3xl shadow-2xl max-w-4xl mx-auto mt-10 border-4 border-white/50">
+    <div className="bg-beige-100 text-gray-800 p-10 rounded-xl shadow-lg max-w-3xl mx-auto mt-10 border border-gray-300 font-serif">
       <audio ref={audioRef} src="/birthday-song.mp3" preload="auto" />
       <div className="text-center mb-10">
-        <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-white shadow-inner border-4 border-rose-400 flex items-center justify-center text-7xl">
-          🧁
+        <div className="w-28 h-28 mx-auto mb-5 rounded-full bg-white shadow border-2 border-gray-300 flex items-center justify-center text-5xl">
+          🎂
         </div>
-        <h1 className="text-5xl font-extrabold text-pink-700 mb-2 drop-shadow-sm animate-pulse">You're Invited by Daksh Kalli!</h1>
-        <h2 className="text-3xl font-semibold text-rose-600 mb-4">Celebrating Daksh's 1st Birthday 🎂</h2>
-        <p className="text-lg font-medium text-gray-700">Come join us for a magical and joyful day full of love, laughter, and cake!</p>
-        <div className="mt-6 text-3xl font-bold text-white bg-rose-600 rounded-full px-8 py-4 inline-block shadow-2xl tracking-wide animate-bounce">
+        <h1 className="text-4xl font-bold text-gray-700 mb-2">You're Invited to Daksh's Birthday</h1>
+        <h2 className="text-2xl font-semibold text-gray-600 mb-4">1st Year Celebration</h2>
+        <p className="text-md mb-4">We would be delighted to have you join us for this special occasion of joy, laughter, and memories.</p>
+        <div className="mt-4 text-xl font-semibold text-white bg-gray-700 rounded px-6 py-3 inline-block shadow-md">
           ⏳ {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s to party!
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="bg-white rounded-2xl p-6 shadow-md border border-rose-100">
-          <div className="flex items-center mb-3">
-            <Calendar className="w-6 h-6 mr-3 text-rose-500" />
-            <h3 className="text-xl font-bold text-rose-700">Date</h3>
+      <div className="grid md:grid-cols-2 gap-6 text-left">
+        <div className="bg-white rounded p-5 shadow border border-gray-200">
+          <div className="flex items-center mb-2">
+            <Calendar className="w-5 h-5 mr-2 text-gray-500" />
+            <h3 className="text-lg font-semibold">Date</h3>
           </div>
-          <p className="text-lg font-medium">Saturday, June 15th, 2025</p>
+          <p>Saturday, June 15th, 2025</p>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 shadow-md border border-rose-100">
-          <div className="flex items-center mb-3">
-            <Clock className="w-6 h-6 mr-3 text-rose-500" />
-            <h3 className="text-xl font-bold text-rose-700">Time</h3>
+        <div className="bg-white rounded p-5 shadow border border-gray-200">
+          <div className="flex items-center mb-2">
+            <Clock className="w-5 h-5 mr-2 text-gray-500" />
+            <h3 className="text-lg font-semibold">Time</h3>
           </div>
-          <p className="text-lg font-medium">11:00 AM onwards</p>
+          <p>11:00 AM onwards</p>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 shadow-md border border-rose-100 md:col-span-2">
-          <div className="flex items-center mb-3">
-            <MapPin className="w-6 h-6 mr-3 text-rose-500" />
-            <h3 className="text-xl font-bold text-rose-700">Venue</h3>
+        <div className="bg-white rounded p-5 shadow border border-gray-200 md:col-span-2">
+          <div className="flex items-center mb-2">
+            <MapPin className="w-5 h-5 mr-2 text-gray-500" />
+            <h3 className="text-lg font-semibold">Venue</h3>
           </div>
-          <p className="text-lg font-medium">Gilbert Community Center - 130 N Oak St, Gilbert, AZ 85233</p>
-          <p className="text-lg font-medium">Room: OAK</p>
+          <p>Gilbert Community Center - 130 N Oak St, Gilbert, AZ 85233</p>
+          <p>Room: OAK</p>
         </div>
       </div>
 
       <div className="mt-10 text-center">
-        <div className="flex items-center justify-center mb-4">
-          <Heart className="w-6 h-6 mr-2 text-pink-400 animate-pulse" />
-          <span className="text-xl font-semibold text-pink-600">Let's make beautiful memories together!</span>
+        <div className="flex items-center justify-center mb-3">
+          <Heart className="w-5 h-5 mr-2 text-red-400" />
+          <span className="text-lg font-medium">Cherish the memories with us!</span>
         </div>
-        <p className="text-base text-gray-700 italic mb-8">
-          Come dressed in your festive best, ready to dance, laugh, and enjoy delicious treats! Good vibes, music, and baby smiles await! 🎈🎶🍰
+        <p className="text-sm text-gray-600 italic mb-6">
+          Dress comfortably, bring your smiles, and celebrate Daksh's milestone with cake, fun, and photos! 🎈📷🍰
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <img className="rounded-xl shadow-md object-cover h-40 w-full" src="/photos/baby1.jpg" alt="Baby Milestone 1" />
-          <img className="rounded-xl shadow-md object-cover h-40 w-full" src="/photos/baby2.jpg" alt="Baby Milestone 2" />
-          <img className="rounded-xl shadow-md object-cover h-40 w-full" src="/photos/baby3.jpg" alt="Baby Milestone 3" />
+          <img className="rounded shadow object-cover h-36 w-full" src="/photos/baby1.jpg" alt="Baby Milestone 1" />
+          <img className="rounded shadow object-cover h-36 w-full" src="/photos/baby2.jpg" alt="Baby Milestone 2" />
+          <img className="rounded shadow object-cover h-36 w-full" src="/photos/baby3.jpg" alt="Baby Milestone 3" />
         </div>
       </div>
     </div>
