@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Calendar, Clock, MapPin, Heart } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 const PartyProfile = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [hasCelebrated, setHasCelebrated] = useState(false);
+  const audioRef = useRef(null);
 
   useEffect(() => {
     const countdownDate = new Date('2025-06-15T11:00:00').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
-      const distance = countdownDate - now;
+      const distance = Math.max(0, countdownDate - now);
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -17,23 +20,31 @@ const PartyProfile = () => {
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       setTimeLeft({ days, hours, minutes, seconds });
+
+      if (distance === 0 && !hasCelebrated) {
+        confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
+        setHasCelebrated(true);
+        audioRef.current?.play();
+      }
     };
 
+    updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [hasCelebrated]);
 
   return (
     <div className="bg-gradient-to-br from-rose-300 via-pink-200 to-amber-200 text-gray-900 p-10 rounded-3xl shadow-2xl max-w-4xl mx-auto mt-10 border-4 border-white/50">
+      <audio ref={audioRef} src="/birthday-song.mp3" preload="auto" />
       <div className="text-center mb-10">
         <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-white shadow-inner border-4 border-rose-400 flex items-center justify-center text-7xl">
           🧁
         </div>
-        <h1 className="text-5xl font-extrabold text-pink-700 mb-2 drop-shadow-sm">You're Invited by Daksh Kalli!</h1>
+        <h1 className="text-5xl font-extrabold text-pink-700 mb-2 drop-shadow-sm animate-pulse">You're Invited by Daksh Kalli!</h1>
         <h2 className="text-3xl font-semibold text-rose-600 mb-4">Celebrating Daksh's 1st Birthday 🎂</h2>
         <p className="text-lg font-medium text-gray-700">Come join us for a magical and joyful day full of love, laughter, and cake!</p>
-        <div className="mt-6 text-2xl font-semibold text-rose-700 bg-white/70 rounded-xl px-6 py-3 inline-block shadow-lg">
-          Countdown: {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+        <div className="mt-6 text-3xl font-bold text-white bg-rose-600 rounded-full px-8 py-4 inline-block shadow-2xl tracking-wide animate-bounce">
+          ⏳ {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s to party!
         </div>
       </div>
 
