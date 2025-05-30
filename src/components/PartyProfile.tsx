@@ -40,9 +40,9 @@ const PartyProfile = () => {
         <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-blue-100 shadow-lg border-4 border-blue-400 flex items-center justify-center text-6xl animate-bounce">
           🐠
         </div>
-        <h1 className="text-5xl font-extrabold text-cyan-100 mb-2 drop-shadow-lg">Daksh's Ocean Adventure!</h1>
-        <h2 className="text-2xl font-medium text-blue-100 mb-4">Join us under the sea for a fin-tastic 1st birthday</h2>
-        <p className="text-md text-blue-50">We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to a magical underwater-themed celebration for our son Daksh’s first birthday.</p>
+        <h1 className="text-5xl font-extrabold text-cyan-100 mb-2 drop-shadow-lg">Daksh Turns One!</h1>
+        <h2 className="text-2xl font-medium text-blue-100 mb-4">Come celebrate a year of joy and milestones</h2>
+        <p className="text-md text-blue-50"We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories.</p>
         <div className="mt-4 text-2xl font-bold text-blue-900 bg-white rounded-full px-8 py-3 inline-block shadow-md animate-pulse">
           ⏳ {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s to go!
         </div>
@@ -78,10 +78,10 @@ const PartyProfile = () => {
       <div className="mt-10 text-center">
         <div className="flex items-center justify-center mb-4">
           <Heart className="w-5 h-5 mr-2 text-cyan-200 animate-ping" />
-          <span className="text-lg font-medium text-cyan-100">Let’s make waves of memories together!</span>
+          <span className="text-lg font-medium text-cyan-100">Celebrate love, laughter, and baby giggles!</span>
         </div>
         <p className="text-sm text-blue-100 italic mb-6">
-          Dress for an ocean adventure, bring your bubbles of joy, and dive into fun, music, and cake! 🐬🎵🍰
+          Dress playfully, bring your smiles, and get ready to dance, eat cake, and make memories! 🎈🎶🍰
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
