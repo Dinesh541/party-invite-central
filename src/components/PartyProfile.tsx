@@ -33,6 +33,16 @@ const PartyProfile = () => {
     return () => clearInterval(interval);
   }, [hasCelebrated]);
 
+  useEffect(() => {
+    const message = `Hi! We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories. Come celebrate my birthday on June 14th at 11 AM at the Gilbert Community Center!`;
+    const synth = window.speechSynthesis;
+    const utterance = new SpeechSynthesisUtterance(message);
+    utterance.rate = 0.95;
+    utterance.pitch = 1.1;
+    utterance.lang = 'en-US';
+    synth.speak(utterance);
+  }, []);
+
   return (
     <div className="bg-gradient-to-br from-pink-100 via-rose-200 to-yellow-100 text-gray-900 p-10 rounded-3xl shadow-2xl max-w-4xl mx-auto mt-10 border-4 border-rose-200 font-sans animate-fade-in">
       <audio ref={audioRef} src="/birthday-song.mp3" preload="auto" />
@@ -42,7 +52,7 @@ const PartyProfile = () => {
         </div>
         <h1 className="text-5xl font-extrabold text-rose-600 mb-2 drop-shadow-lg">Daksh Turns One!</h1>
         <h2 className="text-2xl font-medium text-gray-700 mb-4">Come celebrate a year of joy and milestones</h2>
-        <p className="text-md text-gray-600">We’re throwing a party and you’re invited!</p>
+        <p className="text-md text-gray-600">We, Dinesh Kalli and Sai Sruthi Gadde, are delighted to invite you to join us in celebrating the first birthday of our beloved son, Daksh. Your presence will mean a lot to us on this joyful occasion filled with love, laughter, and unforgettable memories.</p>
         <div className="mt-4 text-2xl font-bold text-white bg-pink-500 rounded-full px-8 py-3 inline-block shadow-md animate-pulse">
           ⏳ {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s to go!
         </div>
