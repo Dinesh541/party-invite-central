@@ -17,7 +17,7 @@ const Index = () => {
       {/* Header */}
       <div className="text-center py-8">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
-          🎉 Birthday Celebration 🎉
+          🎉 Daksh 1 year Birthday Celebration🎉
         </h1>
         <p className="text-xl text-gray-600">Join us for an unforgettable celebration!</p>
       </div>
