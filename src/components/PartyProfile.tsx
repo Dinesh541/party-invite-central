@@ -9,9 +9,9 @@ const PartyProfile = () => {
         <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-6xl">
           🎉
         </div>
-        <h1 className="text-4xl font-bold mb-2">You're Invited!</h1>
-        <h2 className="text-2xl font-semibold mb-4">My Birthday Celebration</h2>
-        <p className="text-lg opacity-90">Join me for an unforgettable birthday bash!</p>
+        <h1 className="text-4xl font-bold mb-2">You're Invited By Daksh Kalli !!</h1>
+        <h2 className="text-2xl font-semibold mb-4">Daksh Kalli's Birthday Celebration</h2>
+        <p className="text-lg opacity-90">Join us for an unforgettable birthday bash!</p>
       </div>
       
       <div className="grid md:grid-cols-2 gap-6">
@@ -20,7 +20,7 @@ const PartyProfile = () => {
             <Calendar className="w-6 h-6 mr-3" />
             <h3 className="text-xl font-semibold">Date</h3>
           </div>
-          <p className="text-lg">Saturday, June 15th, 2024</p>
+          <p className="text-lg">Saturday, June 15th, 2025</p>
         </div>
         
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
@@ -28,7 +28,7 @@ const PartyProfile = () => {
             <Clock className="w-6 h-6 mr-3" />
             <h3 className="text-xl font-semibold">Time</h3>
           </div>
-          <p className="text-lg">7:00 PM onwards</p>
+          <p className="text-lg">12:00 PM onwards</p>
         </div>
         
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:col-span-2">
@@ -36,7 +36,8 @@ const PartyProfile = () => {
             <MapPin className="w-6 h-6 mr-3" />
             <h3 className="text-xl font-semibold">Venue</h3>
           </div>
-          <p className="text-lg">My Place - 123 Party Street, Celebration City</p>
+          <p className="text-lg">Gilbert Community Center- 130 N Oak St, Gilbert, AZ 85233</p>
+           <p className="text-lg">OAK Room</p>
         </div>
       </div>
       
